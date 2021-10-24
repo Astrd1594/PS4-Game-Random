@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PS4 Game Random</title>
+        <script src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <center>
+            <div class="modal-fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1>Game Decider</h1>
+                        </div>
+                        <div class="modal-body">
+                            <label><b class="text-danger">How to use: </b>Click the "Random" button for a random game</label>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="randomGame()" id="randomgamebutton" style="width: 80%;">Random</button>
+            <div class="modal-fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <label id="asdf"></label>
+                            <hr>
+                            <h1 id="game"></h1>
+                            <br>
+                            <button class="btn btn-warning" onclick="OK()" id="okbutton" disabled="true">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>
